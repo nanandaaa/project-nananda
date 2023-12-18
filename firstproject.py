@@ -3,8 +3,16 @@ import matplotlib.pyplot as plt
 import streamlit as st
  
 # Header
-st.header('Grafik Sin Cos:sparkles:')
-st.subheader('Plot')
+st.header('Grafik Sinus & Cosinus :sparkles:')
+st.subheader('Plot Grafik')
+
+nama = st.text_input('Nama', ' ', label_visibility = 'collapsed')
+st.write('안녕하세요! ',nama)
+
+f1 = st.number_input('f1 = 'value = 1)
+f2 = st.number_input('f1 = 'value = 1)
+st.write('Frekuensi plot sinus adalah ',f1)
+st.write('Frekuensi plot cosinus adalah ',f2)
  
 x = np.linspace(-2 * np.pi, 2 * np.pi, 1000)  # Generating x values from -2*pi to 2*pi
 y = np.sin(x)  # Calculating sin(x) values
